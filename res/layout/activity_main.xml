@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vernonsung.exhello.MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status" />
+    
+    <TextView
+        android:id="@+id/textViewCurrentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textViewStatus"
+        android:text="@string/default_status" />
+    
+    <TextView
+        android:id="@+id/textViewIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStatus"
+        android:layout_marginTop="10dp"
+        android:text="@string/ip" />
+    
+    <EditText
+        android:id="@+id/editTextIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewIp"
+        android:layout_below="@id/textViewStatus"
+        android:hint="@string/i255_255_255_255"
+        android:text="@string/default_destination_ip" >
+        <requestFocus></requestFocus>
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStatus"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/editTextIp"
+        android:text="@string/port" />
+    
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewPort"
+        android:layout_below="@id/textViewStatus"
+        android:hint="@string/i65535"
+        android:text="@string/default_destination_port" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextIp"
+        android:layout_marginTop="10dp"
+        android:text="@string/message" />
+    
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextIp"
+        android:layout_toRightOf="@id/textViewMessage"
+        android:hint="@string/send_the_message"
+        android:text="@string/default_message" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:text="@string/send" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonSend"
+        android:layout_alignBottom="@id/buttonSend"
+        android:layout_toRightOf="@id/buttonSend"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/buttonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonStop"
+        android:layout_alignBottom="@id/buttonStop"
+        android:layout_toRightOf="@id/buttonStop"
+        android:text="@string/count" />
+
+    <Button
+        android:id="@+id/buttonIsLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonCount"
+        android:layout_alignBottom="@id/buttonCount"
+        android:layout_toRightOf="@id/buttonCount"
+        android:text="@string/is_alive" />
+
+    <Button
+        android:id="@+id/buttonReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSend"
+        android:text="@string/receive" />
+
+    <Button
+        android:id="@+id/buttonRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonReceive"
+        android:layout_toRightOf="@id/buttonReceive"
+        android:text="@string/room" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonReceive"
+        android:layout_toRightOf="@id/buttonRoom"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonReceive"
+        android:text="@string/disconnect" />
+
+    <Button
+        android:id="@+id/buttonCancelConn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonDisconnect"
+        android:layout_toRightOf="@id/buttonDisconnect"
+        android:text="@string/cancelconn" />
+
+    <Button
+        android:id="@+id/buttonDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonDisconnect"
+        android:layout_toRightOf="@id/buttonCancelConn"
+        android:text="@string/discover" />
+
+    <Button
+        android:id="@+id/buttonConnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDisconnect"
+        android:text="@string/conninfo" />
+
+    <Button
+        android:id="@+id/buttonGroupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonConnInfo"
+        android:layout_toRightOf="@id/buttonConnInfo"
+        android:text="@string/groupinfo" />
+
+    <Button
+        android:id="@+id/buttonPeerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonConnInfo"
+        android:layout_toRightOf="@id/buttonGroupInfo"
+        android:text="@string/peerinfo" />
+
+    <Button
+        android:id="@+id/buttonDisPeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonConnInfo"
+        android:text="@string/dispeer" />
+
+    <Button
+        android:id="@+id/buttonStopDisPeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonDisPeer"
+        android:layout_toRightOf="@id/buttonDisPeer"
+        android:text="@string/stopdispeer" />
+
+    <Spinner 
+        android:id="@+id/spinnerWps" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/buttonConnInfo" 
+        android:layout_toRightOf="@+id/buttonStopDisPeer" />
+    
+    <TextView
+        android:id="@+id/textViewReceiveStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDisPeer"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/textViewReceivedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewReceiveStatus"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical" />
+
+    
+    
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExHello</string>
+    <string name="action_settings">Settings</string>
+    <string name="status">Status:</string>
+    <string name="default_status">Hello world XD</string>
+    <string name="ip">IP:</string>
+    <string name="i255_255_255_255">255.255.255.255</string>
+    <string name="default_destination_ip">192.168.49.255</string>
+    <string name="port">Port:</string>
+    <string name="i65535">65535</string>
+    <string name="default_destination_port">12345</string>
+    <string name="message">Message:</string>
+    <string name="send_the_message">Send the message</string>
+    <string name="default_message">Show me the money</string>
+    <string name="send">Send</string>
+    <string name="stop">Stop</string>
+    <string name="count">Count</string>
+    <string name="is_alive">IsAlive</string>
+    <string name="receive">Receive</string>
+    <string name="room">Room</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconn</string>
+    <string name="cancelconn">CancelConn</string>
+    <string name="discover">Discover</string>
+    <string name="conninfo">ConnInfo</string>
+    <string name="groupinfo">GroupInfo</string>
+    <string name="peerinfo">PeerInfo</string>
+    <string name="dispeer">DisPeer</string>
+    <string name="stopdispeer">StopDisPeer</string>
+    <string name="sending">Sending</string>
+    <string name="stopped">Stopped</string>
+    <string name="receiving">Receiving</string>
+    <string name="message_is_empty">Message is empty</string>
+    <string name="invalid_ip">Invalid IP. Ex, 255.255.255.255</string>
+    <string name="invalid_port">Port must be 1~65535</string>
+    <string name="wifi_p2p_ok">WiFi P2P is OK</string>
+    <string name="wifi_p2p_unsupported">WiFi P2P is not supported</string>
+    <string name="wifi_p2p_busy">WiFi P2P is busy</string>
+    <string name="wifi_p2p_error">WiFi P2P has error</string>
+    <string name="wifi_p2p_no_service_request">WiFi P2P has no service request</string>
+    <string name="wifi_p2p_on">WiFi P2P ON</string>
+    <string name="wifi_p2p_off">WiFi P2P OFF</string>
+    <string name="wifi_p2p_peers_change">WiFi P2P peers change</string>
+    <string name="wifi_p2p_connection_change">WiFi P2P connection change</string>
+    <string name="wifi_p2p_setting_changes">WiFi P2P setting changes</string>
+    <string name="wifi_p2p_discovery_started">WiFi P2P discovery started</string>
+    <string name="wifi_p2p_discovery_stopped">WiFi P2P discovery stopped</string>
+    <string name="wifi_p2p_manager_is_null">WiFi P2P manager is null</string>
+    <string name="wifi_p2p_network_info_is_null">WiFi P2P network info is null</string>
+    <string name="wifi_p2p_connection_info_is_null">WiFi P2P connection info is null</string>
+    <string name="wifi_p2p_peers_info_is_null">WiFi P2P peers info is null</string>
+    <string name="wifi_p2p_is_connected">WiFi P2P is connected</string>
+    <string name="wifi_p2p_is_connecting">WiFi P2P is connecting</string>
+    <string name="wifi_p2p_is_disconnected">WiFi P2P is disconnected</string>
+    <string name="wifi_p2p_is_disconnecting">WiFi P2P is disconnecting</string>
+    <string name="wifi_p2p_is_suspended">WiFi P2P is suspended</string>
+    <string name="wifi_p2p_is_unknown">WiFi P2P is unknown</string>
+    <string name="group_owner_is">Group owner is</string>
+    <string name="group_is_formed">Group is formed</string>
+    <string name="group_is_not_formed">Group is not formed</string>
+    <string name="i_am_group_owner">I\'m group owner</string>
+    <string name="i_am_not_group_owner">I\'m not group owner</string>
+    <string name="api_lower_than_18_can_not_get_group_info">API &#060; 18 can\'t get group info</string>
+    <string name="this_is_a_bug">A bug</string>
+
+    <string-array name="wps_setup_types">
+        <item>PBC</item>
+        <item>Display</item>
+        <item>Keypad</item>
+        <item>Label</item>
+    </string-array>
+
+</resources>
